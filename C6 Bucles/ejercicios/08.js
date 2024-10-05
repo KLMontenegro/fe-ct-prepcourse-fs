@@ -3,6 +3,11 @@ function esPositivoOInferiorA10(a) {
    // Retorna true si es positivo y menor que 10.
    // Retorna false en caso contrario.
    // Tu código:
+   if((a < 10) && ((Math.sign(a) === 1) || (Math.sign(a) === 0))){
+      return true;
+   }
+     return false;
 }
 
+esPositivoOInferiorA10(11)
 module.exports = esPositivoOInferiorA10;
